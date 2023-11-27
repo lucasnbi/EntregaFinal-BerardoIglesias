@@ -9,10 +9,12 @@
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;}
 
+    h2 {
+        color: white;}
 
-    body {
-        background-color:beige;
-    }
+    p{
+        color: white;
+    } 
     
    /*  header {
         background-color:rgb(63, 6, 6);
