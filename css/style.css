@@ -9,7 +9,7 @@
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;}
 
-    h2 {
+    body h1 {
         color: white;}
 
     p{
@@ -159,12 +159,7 @@
         width: 100%;
         height: auto;
        
-    } */ */
-
-.piefoot {
-    color: white;
-}
-
+    } */
 
 .flexrs .img {
     border: none;
