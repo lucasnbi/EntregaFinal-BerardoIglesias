@@ -9,8 +9,17 @@
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;}
 
+.cuerpo {
+    background-color:rgb(199, 196, 196);
+    padding-left: 15px;
+}
+ 
 body h1{
     color: white;
+}
+
+body h3 {
+    text-decoration: underline;
 }
 
 .mayor{
@@ -18,11 +27,13 @@ body h1{
 }     
 
 .grid-container {
-    padding: 5px;
+    padding: 2px;
     background-color: rgb(164, 164, 164);
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 5px;
+    gap: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .grid-container .grid-item {
