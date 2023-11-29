@@ -9,13 +9,36 @@
     font-family: 'Open Sans', sans-serif; */
     text-decoration: none; }
 
+body {
+        background-image: url('../img/2.png'); 
+        background-size: cover; 
+        background-position: center;
+ }
+
+ .containerindex {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: rgb(13, 13, 13);
+}
+
+.containerindex p {
+    width: 50%; 
+    margin: 0 auto;
+    text-align: justify;
+    color: black;
+}
+
 nav{
     margin-bottom: 0;
 }
 
+.fondogris{
+ background-color:rgb(199, 196, 196);
+}
+
 main {
-    background-color:rgb(199, 196, 196);
-    padding-top: 20px;
     min-height: 100vh;
 }
  .cuerpo{
@@ -38,7 +61,7 @@ body h3 {
   }
 
 .card-deck .card {
-    margin-bottom: 0; 
+    margin-bottom: 0;
   }
   .center-image {
     display: block;
@@ -172,40 +195,55 @@ body h3 {
 
 }
 
-
-
-
-/* Estilos para el footer */
-footer.bd-footer {
-    background-color: #f8f9fa; /* Cambia el color de fondo del footer según tu preferencia */
+ footer {
+    background-color: rgb(40, 40, 40);
+    color: white; 
+    padding: 20px 0;
+    /* text-align: center; */
 }
 
-/* Estilos para el fondo negro */
-.bg-black {
-    background-color: black;
-}
-
-/* Estilos para el texto del footer */
-footer.bd-footer p {
-    color: white;
-    margin: 0; /* Elimina el margen predeterminado */
-}
-
-/* Estilos para el centrado del contenido */
-footer.bd-footer .container-fluid {
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 150px; /* Ajusta la altura deseada */
 }
 
-/* Alineación del contenido */
-footer.bd-footer .justify-content-lg-start {
-    margin-left: 40px;
+.info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Ajuste de márgenes */
-footer.bd-footer .px-3 {
-    margin-left: 40px;
-    margin-right: 40px;
+.info ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.info ul li:last-child {
+    margin-right: 0;
+}
+
+.info ul img {
+    vertical-align: middle;
+}
+
+/* .disclaimer p {
+    margin-top: 20px;
+} */
+
+.footer-content .info ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content .info ul li {
+    margin-right: 10px;
+}
+
+.disclaimer {
+    text-align: center;
 }
