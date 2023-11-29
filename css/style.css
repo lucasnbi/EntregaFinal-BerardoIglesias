@@ -172,3 +172,40 @@ body h3 {
 
 }
 
+
+
+
+/* Estilos para el footer */
+footer.bd-footer {
+    background-color: #f8f9fa; /* Cambia el color de fondo del footer según tu preferencia */
+}
+
+/* Estilos para el fondo negro */
+.bg-black {
+    background-color: black;
+}
+
+/* Estilos para el texto del footer */
+footer.bd-footer p {
+    color: white;
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Estilos para el centrado del contenido */
+footer.bd-footer .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Ajusta la altura deseada */
+}
+
+/* Alineación del contenido */
+footer.bd-footer .justify-content-lg-start {
+    margin-left: 40px;
+}
+
+/* Ajuste de márgenes */
+footer.bd-footer .px-3 {
+    margin-left: 40px;
+    margin-right: 40px;
+}
