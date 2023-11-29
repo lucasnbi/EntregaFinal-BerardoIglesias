@@ -4,9 +4,9 @@
     margin: 0px;
     padding: 0px;   
     box-sizing: border-box;
-    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-family: 'Nosifer', sans-serif;
-    font-family: 'Open Sans', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none; }
 
 main {
@@ -84,52 +84,4 @@ body h3 {
     width: 100%;
     height: auto;
     border: 1px solid rgb(7, 7, 7);
-}
-
-#degustaciones {
-    width: 100%;
-    max-width: 1220px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-}
-
-#degustaciones .degustaciones-img img {
-    width: 550px;
-    height: auto;
-    padding-right: 30px;
-}
-
-#degustaciones .degustaciones-opc a {
-    background-color: rgb(43, 42, 42);
-    text-decoration: none;
-    font-size: 18px;
-    padding: 5px 5px;
-    display: inline-block;
-    margin-top: 5px;
-    border-radius: 25px;
-    text-transform: uppercase;
-    color: rgb(234, 234, 243);
-    max-width: 240px;
-    width: 100%;
-    text-align: center;
-}
-
-#degustaciones .degustaciones-opc a:hover {
-    background-color: rgba(0, 81, 230, 0.501);
-}
-
-@media (max-width: 768px) {
-    #degustaciones {
-        flex-direction: column-reverse;
-        padding-top: 15px;
-    }
-    #degustaciones .degustaciones-img img {
-        width: 100%;
-        height: auto;
-        padding-top: 15px;
-    }
-
 }
