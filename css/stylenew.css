@@ -136,4 +136,14 @@ footer {
     height: auto;
 }
 
+.cont_rrss .cont_follow svg{
+    width: 65px;
+    height: auto;
+    gap: 30px;
+    color: #f3f2ee;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
 
