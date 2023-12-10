@@ -10,6 +10,9 @@
     font-family: 'Nosifer', sans-serif;
     font-family: 'Open Sans', sans-serif; */
 }
+a {
+    text-decoration: none;
+}
 
 /* INDEX */
 
@@ -146,4 +149,327 @@ footer {
     align-content: center;
 }
 
+/* FRASES VINO */
 
+.nuestros_vinos {
+    background-color: #f3f2ee;
+    width: 100%;
+    padding: 20px;
+    color: #e78c3b;
+    padding: 40px;
+}
+
+@media (min-width:425px) and (max-width:800px) /* Desde and hasta */
+{
+    .nuestros_vinos {
+        background-color: #f3f2ee;
+        color: #e78c3b;
+        text-align: center;
+    }
+}
+
+.nuestros_vinos h1{
+    font-family:'Montserrat';
+    font-size: 23px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 1,500;
+    text-align: center;
+    justify-items: center;  
+    align-items: center; 
+}
+
+.vinos {
+    background-image: url('../img/C1.jpg');
+    background-position: inherit;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 80px;
+}
+
+@media (min-width:425px) and (max-width:800px)
+{
+    .vinos {
+    background-image: url('../img/vinito.jpg');
+    background-position: inherit;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+}
+
+.vinos h2{
+    font-family:'Montserrat';
+    font-size: 35px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 1,600;
+    text-align: start;
+    justify-items: start; 
+    align-items: start; 
+    color: #f3f2ee;
+}
+
+.vinos p{
+    font-family:'Montserrat';
+    text-align: start;
+    justify-items: start; 
+    align-items: start; 
+    color: #f3f2ee;
+    padding: 0px;
+}
+
+.flex_btn_vinos {
+    display: flex;
+    flex-direction:row;
+    justify-content: start;
+    gap: 10px;
+}
+
+.flex_btn_vinos .botones_v a {
+    background-color: transparent;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 1,300;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 5px;
+    border-radius: 20px;
+    border: 1px solid #f3f2ee;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: #f3f2ee;
+    max-width: 400px;
+    width: 100%;
+} 
+
+.flex_btn_vinos .botones_v a:hover {
+    background-color: #e78c3b;
+    color: #f3f2ee;
+    border: 1px solid #e78c3b;
+}
+
+.cont_bodega {
+    background-color: #f3f2ee;
+    width: 100%;
+    padding: 80px;
+}
+
+@media (min-width:425px) and (max-width:800px) /* Desde and hasta */
+{
+    .cont_bodega {
+    background-color: #f3f2ee;
+    }
+}
+
+.cont_bodega h3{
+    font-family:'Montserrat';
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 1,600;
+    text-align: center;
+    justify-items: center; 
+    align-items: center; 
+    color: #343a40;
+}
+
+.cont_bodega a{
+    color:#e78c3b;
+    text-decoration: none;
+}
+
+.cont_bodega a:hover {
+    font-size: 27px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* CONTACTO */
+
+.cont_contacto{
+    background-image: url('../img/C3.jpg');
+    background-position: inherit;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 90px;
+}
+
+@media (min-width:425px) and (max-width:800px)
+{
+    .cont_contacto{
+    background-image: url('../img/C3.jpg');
+    background-position: inherit;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+}
+
+.cont_contacto h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 1,500;
+    text-align: center;
+    justify-items: center; 
+    align-items: center; 
+    color: #f3f2ee;
+}
+
+.cont_contacto p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    justify-items: center; 
+    align-items: center; 
+    color: #f3f2ee;
+    padding: 0px;
+}
+
+/* FORM */
+
+.contact_form{	
+	width: 1fr; 
+    height: auto;
+	padding-top: 20px;
+    padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    justify-content: center;
+    text-align: center;
+}
+
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #e78c3b;
+}
+
+textarea{
+    background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #e78c3b; 
+	margin-top: 10px;  
+	padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+
+.contact_form button{
+	height: 40px; 
+    width: 210px;		
+	text-transform: uppercase;
+	background-color: #e78c3b; 
+	border-color: #e78c3b; 
+	border-style: solid; 
+	border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+}
+
+.contact_form button p{
+	color: #f3f2ee;
+    padding: 10px;
+}
+
+span{
+	color: #e78c3b; 
+}
+
+.aviso{
+	font-size: 13px;  
+	color: #212529;  
+}
+
+.contact_form p{
+	font-size: 14px; 
+	color: #212529; 
+}
+
+/* INFO CONTACTO */
+
+.cont_infoc{
+    background-color: #aee213;
+    display: flex;
+    flex-direction:row;
+    flex-basis:0;
+    flex-grow: 1;
+}
+
+.cont_info {
+    background-color: aqua;
+    display: flex;
+    flex-grow: 1;
+    flex-basis:0;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+
+}
+
+@media (min-width:125px) and (max-width:800px)
+{
+    .cont_info{
+        background-color: rgb(225, 255, 0);
+        display: flex;
+        flex-grow: 1;
+        width: 100%;
+        border: 1px solid black;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.cont_info h3{
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    justify-items: center; 
+    align-items: center; 
+    color: #f3f2ee;
+} 
+
+.cont_info p{
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    justify-items: center; 
+    align-items: center; 
+    color: #f3f2ee;
+
+}
+
+.container-fluid {
+    color: #f3f2ee;
+    /* background-color: var(--bs-gray-900); */
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+
+}
+
+.row{
+    background-color: var(--bs-gray-800);
+}
+
+.container-fluid p{
+color: #e78c3b; 
+}
