@@ -406,7 +406,7 @@ span{
 /* INFO CONTACTO */
 
 .cont_infoc{
-    background-color: #aee213;
+    background-color: #f3f2ee;
     display: flex;
     flex-direction:row;
     flex-basis:0;
@@ -676,4 +676,36 @@ span{
 .botella img{
     width: 100%;
     max-width: 450px;
+}
+
+.nuestra_bodega2 {
+    background-color: #f3f2ee;
+    width: 100%;
+    padding: 40px 40px 40px 0px;
+}
+
+@media (min-width:425px) and (max-width:800px)
+{
+    .nuestra_bodega2 {
+        background-color: #f3f2ee;
+        font-size:16px;
+        color: #343a40;
+        font-weight: 1,500;
+        text-align: center;
+        justify-items: center;  
+        align-items: center;
+        line-height: 40px;
+        padding: 20px;
+    }
+}
+
+.nuestra_bodega2 h3{
+    font-family:'Montserrat';
+    font-size:20px;
+    color: #343a40;
+    font-weight: 1,500;
+    text-align: center;
+    justify-items: center;  
+    align-items: center; 
+    line-height: 40px;  
 }
