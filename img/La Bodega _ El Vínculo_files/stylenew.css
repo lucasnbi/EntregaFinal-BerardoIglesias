@@ -14,7 +14,7 @@
 /* INDEX */
 
 .index_background {
-    background-image: url('../img/back.jpeg');
+    background-image: url('../img/back');
     background-position: inherit;
     background-size:cover;
     background-repeat: no-repeat;
@@ -47,13 +47,6 @@
     padding: 0px 0px 30px;
     text-align: center;
 }
-.flex_disclaimer_q #question {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    padding: 0px 0px 30px;
-    text-align: center;
-}
 
  p {
     font-family: 'Montserrat', sans-serif;
@@ -71,7 +64,7 @@
     font-size: 65px;
     font-style: italic;
     text-align: center;
-    font-weight: 900;
+    font-weight: 1,900;
     color: #f3f2ee;
 }
 
