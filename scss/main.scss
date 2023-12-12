@@ -116,3 +116,147 @@ footer{
     }
 }
 
+/* CONTACTO */
+/* RRSS & INFO */
+
+.container-fluid {
+    color: #f3f2ee;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    .row{
+        background-color: var(--bs-gray-800);
+    }
+    p{
+    color: #e78c3b;
+    font-size: 18px;
+    padding-top: 3px;
+    a{
+    color: #e78c3b;
+    font-size: 20px;
+    text-decoration: none;
+    &:hover{
+        color: #f3f2ee;
+        font-size: 24px;
+        cursor: pointer;
+        text-decoration: underline;   
+    }
+    }
+    }
+    h2{
+        a{
+            i{
+                color: #f3f2ee;
+                text-decoration: none;
+                font-size: 55px;
+                &:hover{
+                    color: #e78c3b;
+                    cursor: pointer;
+                    font-size: 65px;
+                }
+            }
+        }
+    }
+    h3{
+        padding-top: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        font-style: italic;
+        text-transform: uppercase;
+        text-align: center;
+        justify-items: center; 
+        align-items: center; 
+        color: #f3f2ee;
+    }
+}
+
+/* FORMULARIO DE CONTACTO */
+
+.contact_form{	
+	width: 1fr; 
+    height: auto;
+	padding-top: 20px;
+    padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    justify-content: center;
+    text-align: center;
+& button{
+height: 40px; 
+width: 210px;		
+text-transform: uppercase;
+background-color: #e78c3b; 
+border-color: #e78c3b; 
+border-style: solid; 
+border-radius: 10px;
+cursor: pointer;
+font-family: 'Montserrat';
+p{
+    color: #f3f2ee;
+    padding: 10px; 
+ }
+    }
+    span{
+        color: #e78c3b; 
+    }
+    .aviso{
+        font-size: 13px;  
+        color: #212529;  
+    }
+& p{
+    font-size: 14px; 
+    color: #212529; 
+    }
+}
+
+input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #e78c3b;
+}
+textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #e78c3b; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+
+/* CONTACTO BANNER */
+
+.cont_contacto{
+    background-image: url('../img/C3.jpg');
+    background-position: inherit;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 90px;
+    h1{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 55px;
+      font-style: italic;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-align: center;
+      justify-items: center; 
+      align-items: center; 
+      color: #f3f2ee;
+    }
+    p{
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      justify-items: center; 
+      align-items: center; 
+      color: #f3f2ee;
+      padding: 0px;
+    }
+}
