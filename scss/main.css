@@ -243,4 +243,248 @@ textarea {
   align-items: center;
   color: #f3f2ee;
   padding: 0px;
+}
+
+/* LA BODEGA */
+/* NUESTRA BODEGA2 */
+.nuestra_bodega2 {
+  background-color: #f3f2ee;
+  width: 100%;
+  padding: 40px 40px 40px 0px;
+}
+.nuestra_bodega2 h3 {
+  font-family: "Montserrat";
+  font-size: 20px;
+  color: #343a40;
+  font-weight: 1, 500;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  line-height: 40px;
+}
+
+.terroir {
+  background-image: url("../img/Terroir.jpg");
+  background-position: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 80px;
+}
+.terroir h2 {
+  font-family: "Montserrat";
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 1, 600;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  color: #f3f2ee;
+}
+.terroir p {
+  font-family: "Montserrat";
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: #f3f2ee;
+  padding: 0px;
+}
+
+.flex_btn_terroir {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.flex_btn_terroir .botones_t a {
+  background-color: transparent;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 1, 300;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 5px;
+  border-radius: 20px;
+  border: 1px solid #f3f2ee;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #f3f2ee;
+  max-width: 400px;
+  width: 100%;
+}
+.flex_btn_terroir .botones_t a:hover {
+  background-color: #e78c3b;
+  color: #f3f2ee;
+  border: 1px solid #e78c3b;
+}
+
+.nuestra_bodega {
+  background-color: #f3f2ee;
+  width: 100%;
+  padding: 40px 40px 40px 0px;
+}
+.nuestra_bodega h2 {
+  font-family: "Montserrat";
+  font-size: 20px;
+  color: #343a40;
+  font-weight: 1, 500;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  line-height: 40px;
+}
+
+.botella {
+  display: flex;
+  background-color: #f3f2ee;
+  flex-direction: column;
+  padding-top: 0px;
+  align-items: center;
+}
+.botella h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #e78c3b;
+  font-style: italic;
+  padding-top: 22px;
+}
+.botella img {
+  width: 100%;
+  max-width: 450px;
+}
+
+.cont_labodega {
+  background-image: url("../img/labodega1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 90px;
+}
+.cont_labodega h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  color: #f3f2ee;
+}
+.cont_labodega p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  color: #f3f2ee;
+  padding: 0px;
+}
+
+/* VINOS */
+.vinos {
+  background-image: url("../img/contacto.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 90px;
+}
+.vinos h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  color: #f3f2ee;
+}
+.vinos p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  color: #f3f2ee;
+  padding: 0px;
+}
+
+.portfoliov {
+  display: flex;
+  background-color: #f3f2ee;
+  padding: 70px 100px;
+  flex-direction: row;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.portfoliov .hover01 img {
+  transform: scale(1);
+  transition: 0.1s ease-in-out;
+}
+.portfoliov .hover01 img:hover {
+  transform: scale(1.2);
+}
+.portfoliov img {
+  background-color: #f3f2ee;
+  margin: 5px;
+  padding: 10px 90px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 400px;
+}
+.portfoliov h2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 22px;
+  color: #212529;
+}
+.portfoliov h3 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  color: #e78c3b;
+}
+.portfoliov h4 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  color: #212529;
+}
+.portfoliov a {
+  font-family: "Montserrat", sans-serif;
+  justify-items: center;
+  font-size: 15px;
+  font-style: italic;
+  text-decoration: none;
+  color: black;
+}
+.portfoliov a:hover {
+  font-family: "Montserrat", sans-serif;
+  justify-items: center;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #e78c3b;
+}
+
+.agotado h4 {
+  font-size: 24px;
+  border: 2px solid #e78c3b;
+  background-color: #e78c3b;
+  color: #f3f2ee;
+}
+
+.agotado2 {
+  text-decoration: line-through;
 }/*# sourceMappingURL=main.css.map */

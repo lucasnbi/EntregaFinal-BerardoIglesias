@@ -709,3 +709,8 @@ span{
     align-items: center; 
     line-height: 40px;  
 }
+
+.portfoliov{
+    display: flex;
+    
+}

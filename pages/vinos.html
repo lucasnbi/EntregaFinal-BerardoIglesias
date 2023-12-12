@@ -3,111 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bodega El Vínculo</title>
+    <title>La Bodega | Vinos</title>
     <link rel="shortcut icon" href="../img/favicon.png"type="image/x-icon">
+    <link rel="stylesheet" href="../scss/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="https://kit.fontawesome.com/bf7d633feb.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Fundada en 2023, Bodega El Vínculo es reconocida por su rol pionero en haber hecho resurgir la variedad Malbec y haber descubierto los terroirs de altura ...">
+    <meta name="keywords" content="bodega argentina, malbec, pinot noir, cabernet franc, el vinculo, mendoza, vino de altura, vino con madera">
+  </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark py-1 px-5" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./home.html">
-        <img src="../img/elvinblanco.png" alt="El Vínculo" width="65" height="auto">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./nosotros.html">NOSOTROS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./vinos.html">VINOS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./servicios.html">SERVICIOS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">CONTACTO</a>
-          </li>
-        </ul>
-     </ul>
-      </div>
-    </div>
-  </nav>
-  <main>
-    <div class="container mb-2 mt-4">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
-            <div class="card">
-              <img src="../img/Cabernet-Franc.png" class="card-img-top img-fluid center-image" alt="Cabernet-Franc">
-              <div class="card-body text-center">
-                <h5 class="card-title"><strong>CABERNET FRANC</strong></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="../pdf/ficha-tecnica.pdf" class="btn btn-secondary"target="_blank">Ficha técnica</a>
+    <main>
+        <section><!-- Nav -->
+            <nav>
+              <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212529;">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-underline ms-auto mb-2 mb-lg-0 me-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="../pages/labodega.html">LA BODEGA</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/vinos.html">VINOS</a>
+                      </li>
+                      <li class="nav-item animate__animated animate__fadeInDown">
+                        <a class="navbar-link" href="../pages/home.html">
+                            <img src="../img/favicon.png" alt="Bootstrap" width="65" height="auto">
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html">SERVICIOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </nav>
+        </section>
+        <section><!-- VINOS -->
+            <div class="vinos">
+                <h1 class="animate__animated animate__fadeInUp">NUESTROS VINOS</h1>
+                  <p>Cuidamos las uvas y las  trabajamos de la forma más natural posible.</p>
+          </section>
+          <section>
+            <div class="portfoliov">
+             <div class="hover01 column"><img src="../img/Cabernet-Franc.png" alt="Cabernet Franc">
+                <h2>CABERNET FRANC</h2>
+                <h3>$20.000</h3>
+                <h4><a href="../pdf/ficha-tecnica.pdf">Ver ficha técnica</a></h4>
+            </div>
+            <div class="hover01 column"><img src="../img/Malbec.png" alt="Malbec">
+                <h2>MALBEC</h2>
+                <h3>$17.000</h3>
+                <h4><a href="../pdf/ficha-tecnica.pdf">Ver ficha técnica</a></h4>
+            </div>
+            <div class="hover01 column"><img src="../img/Pinot-noir.png" alt="Pinot Noir">
+                <h2>PINOT NOIR</h2>
+                <div class="agotado"><h4>AGOTADO</h4></div>
+                <h3 class="agotado2">$9.000</h3>
+                <h4><a href="../pdf/ficha-tecnica.pdf">Ver ficha técnica</a></h4>
+            </div>
+            <div class="hover01 column"><img src="../img/tempranillo.png" alt="Tempranillo">
+                <h2>TEMPRANILLO</h2>
+                <h3>$5.500</h3>
+                <h4><a href="../pdf/ficha-tecnica.pdf">Ver ficha técnica</a></h4>
+            </div>
+            <div class="hover01 column"><img src="../img/Cabernet-Franc.png" alt="Cabernet Franc">
+                <h2>CABERNET FRANC '15</h2>
+                <h3>$27.000</h3>
+                <h4><a href="../pdf/ficha-tecnica.pdf">Ver ficha técnica</a></h4>
+            </div>
+            <div class="hover01 column"><img src="../img/Malbec.png" alt="Malbec">
+                <h2>MALBEC GRAN RESERVA</h2>
+                <div class="agotado"><h4>AGOTADO</h4></div>
+                <h3 class="agotado2">$42.000</h3>
+                <h4><a href="../pdf/ficha-tecnica.pdf">Ver ficha técnica</a></h4>
+            </div>
+            <div class="hover01 column"><img src="../img/Pinot-noir.png" alt="Pinot Noir">
+                <h2>PINOT NOIR ROSADO</h2>
+                <h3>$18.000</h3>
+                <h4><a href="../pdf/ficha-tecnica.pdf">Ver ficha técnica</a></h4>
+            </div>
+            <div class="hover01 column"><img src="../img/tempranillo.png" alt="Tempranillo">
+                <h2>TEMPRANILLO</h2>
+                <h3>$12.050</h3>
+                <h4><a href="../pdf/ficha-tecnica.pdf">Ver ficha técnica</a></h4>
+             </div>
+            </div>
+          </section>
+         <section><!-- RRSS -->
+          <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-3 p-5 text-center justify-content:center"> 
+                  <h2>SEGUINOS:
+                    <p>@bodegaelvinculo</p>
+                  <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                  <a href="https://facebook.com/" class="text-decoration-none" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                  <a href="https://youtube.com/" class="text-decoration-none" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
+                </h2>
+                </div>
+                <div class="col-lg-3 p-0">
+                 <img src="../img/RRSS-Estate-Bottled.jpg" alt="">
+                </div>
+                <div class="col-lg-3 p-0">
+                  <img src="../img/JPerez.jpeg" alt="">
+                </div>
+                <div class="col-lg-3 p-0">
+                  <img src="../img/RRSS-Single-Vineyard.jpg" alt="">
+                </div>
               </div>
             </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
-          <div class="card">
-            <img src="../img/Malbec.png" class="card-img-top img-fluid center-image" alt="Malbec">
-            <div class="card-body text-center">
-              <h5 class="card-title"><strong>MALBEC</strong></h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="../pdf/ficha-tecnica.pdf" class="btn btn-secondary"target="_blank">Ficha técnica</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
-            <div class="card">
-              <img src="../img/Pinot-noir.png" class="card-img-top img-fluid center-image" alt="Pinot Noir">
-              <div class="card-body text-center">
-                <h5 class="card-title"><strong>PINOT NOIR</strong></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="../pdf/ficha-tecnica.pdf" class="btn btn-secondary"target="_blank">Ficha técnica</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
-            <div class="card">
-              <img src="../img/Cabernet-Franc.png" class="card-img-top img-fluid center-image" alt="Tempranillo">
-              <div class="card-body text-center">
-                <h5 class="card-title"> <strong>TEMPRANILLO</strong></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="../pdf/ficha-tecnica.pdf" class="btn btn-secondary"target="_blank">Ficha técnica</a>
-              </div>
-          </div>
-        </div>
-
-      </div>
-</div>
-  </main>
-  <footer>
-    <div class="footer-content">
-        <div class="info">
-            <p>EL VÍNCULO</p>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <img src="../img/facebook.png" alt="Fb" width="25" height="auto">
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <img src="../img/instagram.png" alt="Ig" width="25" height="auto">
-                    </a>
-                </li>
-                <li>
-                    <p>Todos los derechos reservados.</p>
-                </li>
-            </ul>
-        </div>
-        <div class="disclaimer">
-            <p>Beber con moderación | Prohibida su venta a menores de 18 años | TODOS LOS DERECHOS RESERVADOS 2023</p>
-        </div>
-    </div>
-</footer>
+           </section>
+        <section><!-- FOOTER -->
+            <footer>
+                <div class="foot_info">
+                    <div class="disclaimer_foot">
+                        <p>BEBER CON MODERACIÓN | PROHIBIDA SU VENTA A MENORES DE 18 AÑOS
+                          <br>
+                           TODOS LOS DERECHOS RESERVADOS © 2023</p>
+                        </div>
+                </div>
+            </footer>
+          </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
