@@ -509,12 +509,12 @@ a{
         &.restoinfo{
             background-color:#f3f2ee;
             color: #343a40;
-            text-align: center;
-            margin: auto;
+            text-align: start;
+           /*  margin: auto; */
             h2{
             font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size:100px
+            font-weight: 900;
+            font-size: 80px;
             }
             p{
                 color: #343a40;
