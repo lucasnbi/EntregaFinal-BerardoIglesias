@@ -6,6 +6,19 @@ $colorTextosN: #e78c3b;
 $colorTextosG: #343a40;
 $colorFooter: #212529;
 
+@mixin banners{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 55px;
+        font-style: italic;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        justify-items: center; 
+        align-items: center; 
+        color: #f3f2ee;
+
+}
+
 *{
     margin: 0px;
     padding: 0px;
