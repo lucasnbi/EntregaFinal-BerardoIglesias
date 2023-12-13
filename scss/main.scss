@@ -6,7 +6,7 @@ $colorTextosN: #e78c3b;
 $colorTextosG: #343a40;
 $colorFooter: #212529;
 
-@mixin banners{
+@mixin  banners-h1{
         font-family: 'Montserrat', sans-serif;
         font-size: 55px;
         font-style: italic;
@@ -16,7 +16,14 @@ $colorFooter: #212529;
         justify-items: center; 
         align-items: center; 
         color: #f3f2ee;
-
+}
+@mixin banners-p{
+    font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      justify-items: center; 
+      align-items: center; 
+      color: #f3f2ee;
+      padding: 0px;
 }
 
 *{
@@ -256,23 +263,10 @@ textarea{
     width: 100%;
     padding: 90px;
     h1{
-      font-family: 'Montserrat', sans-serif;
-      font-size: 55px;
-      font-style: italic;
-      text-transform: uppercase;
-      font-weight: 700;
-      text-align: center;
-      justify-items: center; 
-      align-items: center; 
-      color: #f3f2ee;
+      @include banners-h1();
     }
     p{
-      font-family: 'Montserrat', sans-serif;
-      text-align: center;
-      justify-items: center; 
-      align-items: center; 
-      color: #f3f2ee;
-      padding: 0px;
+      
     }
 }
 
@@ -400,23 +394,10 @@ textarea{
     width: 100%;
     padding: 90px;
     h1{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 55px;
-        font-style: italic;
-        text-transform: uppercase;
-        font-weight: 700;
-        text-align: center;
-        justify-items: center; 
-        align-items: center; 
-        color: #f3f2ee;
+        @include banners-h1();
     }
     p{
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-        justify-items: center; 
-        align-items: center; 
-        color: #f3f2ee;
-        padding: 0px;
+        @include banners-p();
     }
 }
 
@@ -430,23 +411,10 @@ textarea{
     width: 100%;
     padding: 90px;
     h1{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 55px;
-        font-style: italic;
-        text-transform: uppercase;
-        font-weight: 700;
-        text-align: center;
-        justify-items: center; 
-        align-items: center; 
-        color: #f3f2ee;
+       @include banners-h1();
     }
     p{
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-        justify-items: center; 
-        align-items: center; 
-        color: #f3f2ee;
-        padding: 0px;
+        @include banners-p();
     }
 }
 
@@ -627,22 +595,9 @@ a{
     width: 100%;
     padding: 90px;
     h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 55px;
-    font-style: italic;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-    justify-items: center; 
-    align-items: center; 
-    color: #f3f2ee;
+    @include banners-h1();
     }
     p{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    justify-items: center; 
-    align-items: center; 
-    color: #f3f2ee;
-    padding: 0px;
+        @include banners-p()
     }
     }
