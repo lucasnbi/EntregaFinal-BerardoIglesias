@@ -133,6 +133,14 @@ p {
   cursor: pointer;
   text-decoration: underline;
 }
+.container-fluid .col-lg-3 .p-0 .img-fluid {
+  max-width: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
 .container-fluid h2 a i {
   color: #f3f2ee;
   text-decoration: none;
@@ -768,7 +776,4 @@ textarea {
   .cont_bodega {
     background-color: #f3f2ee;
   }
-}
-.img-fluid {
-  max-width: 100%;
 }/*# sourceMappingURL=main.css.map */
