@@ -768,4 +768,7 @@ textarea {
   .cont_bodega {
     background-color: #f3f2ee;
   }
+}
+.img-fluid {
+  max-width: 100%;
 }/*# sourceMappingURL=main.css.map */
