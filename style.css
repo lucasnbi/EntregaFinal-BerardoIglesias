@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.boxMedia {
+    background-color: aqua;
+    border: 1px solid black;
+    width: 100%;
+    height: 200px;
+}
+
+@media (max-width: 600px) { /* max =  hasta ... */
+    .boxMedia {
+        background-color: blue;
+    }
+    
+}
+
+@media (min-width:768px) {/* min =  desde ... */
+    /* aqui css */
+    .boxMedia{
+        background-color: tomato;
+    }
+}
+
+@media (min-width: 920px) {
+    .boxMedia {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+}
+
+.responsive {
+    background-color: orange;
+    padding: 20px;
+}
+
+@media (min-width:425px) and (max-width:767px) /* Desde and hasta */
+{
+    .responsive {
+        background-color: brown;
+        color: white;
+    }
+}
+

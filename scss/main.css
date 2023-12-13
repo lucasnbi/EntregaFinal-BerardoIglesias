@@ -237,6 +237,15 @@ textarea {
   align-items: center;
   color: #f3f2ee;
 }
+.cont_contacto p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  color: #f3f2ee;
+  padding: 0px;
+}
+
 /* LA BODEGA */
 /* NUESTRA BODEGA2 */
 .nuestra_bodega2 {
@@ -483,7 +492,7 @@ textarea {
 
 .container_servicios {
   display: grid;
-  grid-template-columns: repeat(1, 33%);
+  grid-template-columns: repeat(3, 33%);
   grid-template-rows: auto auto auto;
   padding: 7%;
   background-color: #f3f2ee;
@@ -502,6 +511,13 @@ textarea {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 100px;
+}
+@media (max-width: 820px) {
+  .container_servicios .servicios.restoinfo h2 {
+    font-weight: 500;
+    font-size: 40px;  
+  }
+  
 }
 .container_servicios .servicios.restoinfo p {
   color: #343a40;
