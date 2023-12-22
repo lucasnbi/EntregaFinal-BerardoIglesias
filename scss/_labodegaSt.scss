@@ -155,10 +155,4 @@
     background-attachment: fixed;
     width: 100%;
     padding: 90px;
-    h1{
-        @include banners-h1();
-    }
-    p{
-        @include banners-p();
-    }
 }
