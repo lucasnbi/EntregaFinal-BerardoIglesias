@@ -155,4 +155,21 @@
     background-attachment: fixed;
     width: 100%;
     padding: 90px;
+    h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 55px;
+        font-style: italic;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        justify-items: center; 
+        align-items: center; 
+        color: #f3f2ee;}
+        p{
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            justify-items: center; 
+            align-items: center; 
+            color: #f3f2ee;
+            padding: 0px;}
 }

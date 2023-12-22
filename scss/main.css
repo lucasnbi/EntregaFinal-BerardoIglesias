@@ -8,6 +8,14 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* @import 'footer';
+@import 'header';
+@import 'media';
+@import 'index';
+@import 'grid_home';
+@import 'homeSt';
+@import 'labodegaSt'; */
+/* FOOTER */
 .foot {
   display: flex;
   min-height: 100%;
@@ -96,6 +104,7 @@
   transform: translateY(-7px);
 }
 
+/* HEADER */
 nav {
   /* background-color:#f5f4f2; */
   height: 80px;
@@ -147,286 +156,7 @@ nav.abajo ul li a {
   display: none;
 }
 
-@media (max-width: 953px) {
-  nav #list li a {
-    font-size: 16px;
-  }
-}
-@media (max-width: 858px) {
-  .checkbtn {
-    display: flex;
-  }
-  nav {
-    padding: 0 30px;
-    background-color: white;
-  }
-  #list {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh- 80px);
-    background-color: white;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-    flex-direction: column;
-    z-index: 20;
-  }
-  nav #list li {
-    margin: 20px 0;
-  }
-  nav #list li a {
-    font-size: 16px;
-  }
-  li a:hover, li a.active {
-    font-size: 18px;
-    text-decoration: underline;
-  }
-  #check:checked ~ #list {
-    left: 0;
-  }
-}
-@media (min-width: 425px) and (max-width: 800px) {
-  .home_info {
-    background-color: #f3f2ee;
-  }
-}
-@media (min-width: 425px) and (max-width: 800px) {
-  .vinos {
-    background-image: url("./img/home_vinos.jpg");
-    background-position: inherit;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-}
-@media (min-width: 425px) and (max-width: 800px) {
-  .vinos {
-    background-image: url("./img/home_vinos.jpg");
-    background-position: inherit;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-}
-@media (min-width: 425px) and (max-width: 800px) {
-  .home_nuestros_vinos {
-    background-color: white;
-    color: #f3ae73;
-    text-align: center;
-  }
-}
-@media (min-width: 425px) and (max-width: 800px) {
-  .grid-container {
-    display: grid;
-    position: relative;
-    padding: 5px;
-    gap: 5px;
-    grid-template-columns: 45% 45%;
-  }
-  .grid-container .grid-item {
-    text-align: center;
-    box-shadow: 5px 8px 12px #151112;
-  }
-  .grid-container .grid-item img {
-    width: 60%;
-    height: 60%;
-  }
-  .grid-container .grid-item.exp, .grid-container .grid-item.con {
-    width: 95%;
-    height: auto;
-  }
-  .grid-container .grid-item.exp h3, .grid-container .grid-item.con h3 {
-    font-size: 20px;
-    font-style: italic;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin: 10px 0px 0px 10px;
-    text-shadow: 1px 1px 4px white;
-  }
-  .grid-container .grid-item.exp p, .grid-container .grid-item.con p {
-    font-size: 14px;
-    padding: 0px 0px 0px 10px;
-    text-shadow: 1px 1px 4px white;
-    font-size: 12px;
-  }
-}
-.index_background {
-  background-image: url("./img/index_back.jpeg");
-  background-position: inherit;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-}
-
-.flexCont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.flexCont .flex_logo {
-  width: 100%;
-  max-width: 170px;
-  height: auto;
-}
-.flexCont .flex_logo img {
-  padding: 40px 0px 40px;
-  width: 100%;
-  height: auto;
-}
-
-.flex_disclaimer {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  padding: 0px 0px 30px;
-  text-align: center;
-}
-
-#question {
-  font-family: "Montserrat", sans-serif;
-  font-size: 65px;
-  font-style: italic;
-  text-align: center;
-  font-weight: 900;
-  color: #f3f2ee;
-}
-
-.index_btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
-}
-.index_btn .index_botones a {
-  background-color: #151112;
-  align-items: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 1, 300;
-  padding: 10px 20px;
-  display: inline-block;
-  margin-top: 5px;
-  border-radius: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  color: white;
-  max-width: 400px;
-  width: 100%;
-}
-.index_btn .index_botones a:hover {
-  background-color: #f3ae73;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-style: italic;
-  font-weight: 1, 500;
-  color: white;
-  padding: 15px;
-  justify-items: center;
-  padding: 25px;
-}
-
-.grid-container {
-  display: grid;
-  position: relative;
-  padding: 10px 3% 0px 3%;
-  width: 100%;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  justify-items: center;
-}
-.grid-container .grid-item {
-  text-align: center;
-  box-shadow: 5px 8px 12px #151112;
-}
-.grid-container .grid-item img {
-  width: 100%;
-  height: 100%;
-}
-.grid-container .grid-item.exp {
-  background-image: url("../img/home_bodega.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 90%;
-  height: 600px;
-  grid-column: 1/2;
-}
-.grid-container .grid-item.exp .btn_home {
-  cursor: pointer;
-  background-color: transparent;
-  height: 100%;
-  width: 100%;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  border: none;
-}
-.grid-container .grid-item.exp .btn_home h3 {
-  font-family: "Montserrat";
-  font-size: 30px;
-  font-style: italic;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #151112;
-  text-shadow: 1px 1px 4px white;
-  margin-top: 25px;
-  text-decoration: none;
-}
-.grid-container .grid-item.exp .btn_home p {
-  font-family: "Montserrat";
-  color: #151112;
-  padding: 0px 0px 0px 20px;
-  text-shadow: 1px 1px 4px white;
-  font-size: 20px;
-}
-
-.grid-item.con {
-  background-image: url("../img/home_exp.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 90%;
-  height: 600px;
-  grid-column: 2/3;
-}
-.grid-item.con .btn_home {
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
-.grid-item.con .btn_home h3 {
-  font-family: "Montserrat";
-  font-size: 30px;
-  font-style: italic;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #151112;
-  text-shadow: 1px 1px 4px white;
-  margin-top: 25px;
-}
-.grid-item.con .btn_home p {
-  font-family: "Montserrat";
-  color: #151112;
-  padding: 0px 0px 0px 20px;
-  text-shadow: 1px 1px 4px white;
-  font-size: 20px;
-}
-
-.btn_home a {
-  text-decoration: none;
-}
-
+/* HOME HOME */
 .bannerpic {
   display: flex;
   position: relative;
@@ -571,6 +301,184 @@ p {
   align-items: center;
 }
 
+.grid-container {
+  display: grid;
+  position: relative;
+  padding: 10px 3% 0px 3%;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+}
+.grid-container .grid-item {
+  text-align: center;
+  box-shadow: 5px 8px 12px #151112;
+}
+.grid-container .grid-item img {
+  width: 100%;
+  height: 100%;
+}
+.grid-container .grid-item.exp {
+  background-image: url("../img/home_bodega.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 600px;
+  grid-column: 1/2;
+}
+.grid-container .grid-item.exp .btn_home {
+  cursor: pointer;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border: none;
+}
+.grid-container .grid-item.exp .btn_home h3 {
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #151112;
+  text-shadow: 1px 1px 4px white;
+  margin-top: 25px;
+  text-decoration: none;
+}
+.grid-container .grid-item.exp .btn_home p {
+  font-family: "Montserrat";
+  color: #151112;
+  padding: 0px 0px 0px 20px;
+  text-shadow: 1px 1px 4px white;
+  font-size: 20px;
+}
+
+.grid-item.con {
+  background-image: url("../img/home_exp.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 600px;
+  grid-column: 2/3;
+}
+.grid-item.con .btn_home {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.grid-item.con .btn_home h3 {
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #151112;
+  text-shadow: 1px 1px 4px white;
+  margin-top: 25px;
+}
+.grid-item.con .btn_home p {
+  font-family: "Montserrat";
+  color: #151112;
+  padding: 0px 0px 0px 20px;
+  text-shadow: 1px 1px 4px white;
+  font-size: 20px;
+}
+
+.btn_home a {
+  text-decoration: none;
+}
+
+/* INDEX */
+.index_background {
+  background-image: url("../img/index_back.jpeg");
+  background-position: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+.flexCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flexCont .flex_logo {
+  width: 100%;
+  max-width: 170px;
+  height: auto;
+}
+.flexCont .flex_logo img {
+  padding: 40px 0px 40px;
+  width: 100%;
+  height: auto;
+}
+
+.flex_disclaimer {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  padding: 0px 0px 30px;
+  text-align: center;
+}
+
+#question {
+  font-family: "Montserrat", sans-serif;
+  font-size: 65px;
+  font-style: italic;
+  text-align: center;
+  font-weight: 900;
+  color: #f3f2ee;
+}
+
+.index_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.index_btn .index_botones a {
+  background-color: #151112;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 1, 300;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 5px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  max-width: 400px;
+  width: 100%;
+}
+.index_btn .index_botones a:hover {
+  background-color: #f3ae73;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 1, 500;
+  color: white;
+  padding: 15px;
+  justify-items: center;
+  padding: 25px;
+}
+
+/* LA BODEGA */
 .bannerpic_pages {
   display: flex;
   position: relative;
@@ -726,4 +634,129 @@ p {
   background-attachment: fixed;
   width: 100%;
   padding: 90px;
+}
+.cont_labodega h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  color: #f3f2ee;
+}
+.cont_labodega p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  color: #f3f2ee;
+  padding: 0px;
+}
+
+/* MEDIA MEDIA */
+@media (max-width: 953px) {
+  nav #list li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: flex;
+  }
+  nav {
+    padding: 0 30px;
+    background-color: white;
+  }
+  #list {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh- 80px);
+    background-color: white;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    flex-direction: column;
+    z-index: 20;
+  }
+  nav #list li {
+    margin: 20px 0;
+  }
+  nav #list li a {
+    font-size: 16px;
+  }
+  li a:hover, li a.active {
+    font-size: 18px;
+    text-decoration: underline;
+  }
+  #check:checked ~ #list {
+    left: 0;
+  }
+}
+@media (min-width: 425px) and (max-width: 800px) {
+  .home_info {
+    background-color: #f3f2ee;
+  }
+}
+@media (min-width: 425px) and (max-width: 800px) {
+  .vinos {
+    background-image: url("./img/home_vinos.jpg");
+    background-position: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+@media (min-width: 425px) and (max-width: 800px) {
+  .vinos {
+    background-image: url("./img/home_vinos.jpg");
+    background-position: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+@media (min-width: 425px) and (max-width: 800px) {
+  .home_nuestros_vinos {
+    background-color: white;
+    color: #f3ae73;
+    text-align: center;
+  }
+}
+@media (min-width: 425px) and (max-width: 800px) {
+  .grid-container {
+    display: grid;
+    position: relative;
+    padding: 5px;
+    gap: 5px;
+    grid-template-columns: 45% 45%;
+  }
+  .grid-container .grid-item {
+    text-align: center;
+    box-shadow: 5px 8px 12px #151112;
+  }
+  .grid-container .grid-item img {
+    width: 60%;
+    height: 60%;
+  }
+  .grid-container .grid-item.exp, .grid-container .grid-item.con {
+    width: 95%;
+    height: auto;
+  }
+  .grid-container .grid-item.exp h3, .grid-container .grid-item.con h3 {
+    font-size: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 10px 0px 0px 10px;
+    text-shadow: 1px 1px 4px white;
+  }
+  .grid-container .grid-item.exp p, .grid-container .grid-item.con p {
+    font-size: 14px;
+    padding: 0px 0px 0px 10px;
+    text-shadow: 1px 1px 4px white;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */
