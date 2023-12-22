@@ -17,13 +17,15 @@ $blanco: white;
 $bordo: #581b20;
 $naranja: #f3ae73;
 
-/* @import 'footer';
-@import 'header';
-@import 'media';
-@import 'index';
+@import 'footer';
 @import 'grid_home';
+@import 'header';
 @import 'homeSt';
-@import 'labodegaSt'; */
+@import 'index';
+@import 'labodegaSt';
+@import 'media';
+@import 'vinos';
+
 
 @mixin  banners-h1{
     font-family: 'Montserrat', sans-serif;
@@ -93,7 +95,7 @@ padding: 0px;}
     flex-direction: column;
     p {
         font-family: "Montserrat", sans-serif;
-        font-size: 1.5em;
+        font-size: 1.2em;
         text-transform: uppercase;
         font-weight: 500;
         text-align: center;
@@ -102,6 +104,8 @@ padding: 0px;}
         color: #f3f2ee;
         padding: 5px;
         text-shadow: 1px 1px 4px #292927;
+        margin-left: 25%;
+        margin-right: 25%;
       }
       h1 {
         font-family: "Montserrat", sans-serif;
@@ -219,8 +223,8 @@ nav{
     justify-content: space-around;
     position: fixed;
     z-index: 10;
-    font-weight: 500;
-    text-shadow: 2px 1px 0px $blanco;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px $blanco;
     background-color: transparent;
     #list{
         display: flex;
@@ -819,4 +823,88 @@ p {
        }
        }
    } 
+}
+
+
+/* VINOS */
+.bannerpic_pages_vinos{
+    @include banner_pic_pages (url(../img/vinos_banner.jpg)); 
+}
+
+.portfoliov{
+    display: flex;
+    background-color:#f3f2ee;
+    padding: 70px 100px;
+    flex-direction: row;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    .hover01 img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .1s ease-in-out;
+        transition: .1s ease-in-out;
+        &:hover{
+            -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        }
+    }
+    img{
+        background-color: #f3f2ee;
+        margin: 5px;
+        padding: 10px 90px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        max-height: 400px;
+    }
+h2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    color: #212529;
+    }
+h3{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: #e78c3b;
+    }
+h4{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: #212529;
+    }
+a{
+    font-family: 'Montserrat', sans-serif;
+    justify-items: center;
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: none;
+    color:black;
+    &:hover{
+        font-family: 'Montserrat', sans-serif;
+        justify-items: center;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 600;
+        text-decoration: underline;
+        color: $naranja;
+        }
+    }  
+}
+
+.agotado{
+    h4{
+        font-size: 24px;
+        border: 2px solid $naranja;
+        background-color: $naranja;
+        color: $blanco;
+    }
+}
+.agotado2{
+    text-decoration: line-through;
 }
