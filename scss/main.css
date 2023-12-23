@@ -104,93 +104,88 @@
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   justify-items: center;
+  font-family: "Montserrat", sans-serif;
 }
-.grid-container .grid-item {
-  text-align: center;
-  box-shadow: 5px 8px 12px #151112;
-}
-.grid-container .grid-item img {
-  width: 100%;
-  height: 100%;
-}
-.grid-container .grid-item.exp {
-  background-image: url("../img/home_bodega.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.grid-container .grid-labodega {
   width: 90%;
   height: 600px;
   grid-column: 1/2;
+  position: relative;
+  overflow: hidden;
 }
-.grid-container .grid-item.exp .btn_home {
-  cursor: pointer;
-  background-color: transparent;
-  height: 100%;
+.grid-container .grid-labodega img {
   width: 100%;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  border: none;
+  height: 100%;
 }
-.grid-container .grid-item.exp .btn_home h3 {
-  font-family: "Montserrat";
-  font-size: 30px;
+.grid-container .grid-labodega h3 {
+  color: #151112;
+  text-shadow: 2px 1px 4px white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 2.2rem;
   font-style: italic;
   text-transform: uppercase;
   font-weight: 600;
-  color: #151112;
-  text-shadow: 1px 1px 4px white;
-  margin-top: 25px;
-  text-decoration: none;
+  top: 7%;
+  left: 50%;
 }
-.grid-container .grid-item.exp .btn_home p {
+.grid-container .grid-labodega p {
+  color: #151112;
   font-family: "Montserrat";
-  color: #151112;
-  padding: 0px 0px 0px 20px;
-  text-shadow: 1px 1px 4px white;
-  font-size: 20px;
+  font-size: 1rem;
+  text-shadow: 2px 1px 4px white;
+  position: absolute;
+  top: 20%;
+  transform: translate(65%, -90%);
+  text-align: center;
 }
-
-.grid-item.con {
-  background-image: url("../img/home_exp.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.grid-container .grid-experiencias {
   width: 90%;
   height: 600px;
   grid-column: 2/3;
+  position: relative;
+  overflow: hidden;
 }
-.grid-item.con .btn_home {
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  height: 100%;
+.grid-container .grid-experiencias img {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
+  height: 100%;
 }
-.grid-item.con .btn_home h3 {
-  font-family: "Montserrat";
-  font-size: 30px;
+.grid-container .grid-experiencias h3 {
+  color: #151112;
+  text-shadow: 2px 1px 4px white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 2.2rem;
   font-style: italic;
   text-transform: uppercase;
   font-weight: 600;
-  color: #151112;
-  text-shadow: 1px 1px 4px white;
-  margin-top: 25px;
+  top: 7%;
+  left: 50%;
 }
-.grid-item.con .btn_home p {
-  font-family: "Montserrat";
+.grid-container .grid-experiencias p {
   color: #151112;
-  padding: 0px 0px 0px 20px;
-  text-shadow: 1px 1px 4px white;
-  font-size: 20px;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  text-shadow: 2px 1px 4px white;
+  position: absolute;
+  top: 20%;
+  transform: translate(0%, -80%);
+  text-align: center;
 }
 
-.btn_home a {
-  text-decoration: none;
+.grid-container.hover01 .grid-experiencias img {
+  transform: scale(1);
+  transition: 0.1s ease-in-out;
+}
+.grid-container.hover01 .grid-experiencias img:hover {
+  transform: scale(1.2);
+}
+.grid-container.hover01 .grid-labodega img {
+  transform: scale(1);
+  transition: 0.1s ease-in-out;
+}
+.grid-container.hover01 .grid-labodega img:hover {
+  transform: scale(1.2);
 }
 
 nav {
@@ -635,7 +630,7 @@ p {
     text-align: center;
   }
 }
-@media (min-width: 425px) and (max-width: 800px) {
+@media (min-width: 425px) and (max-width: 920px) {
   .grid-container {
     display: grid;
     position: relative;
@@ -643,31 +638,81 @@ p {
     gap: 5px;
     grid-template-columns: 45% 45%;
   }
-  .grid-container .grid-item {
-    text-align: center;
-    box-shadow: 5px 8px 12px #151112;
+  .grid-container .grid-experiencias {
+    width: 90%;
+    height: 600px;
+    grid-column: 2/3;
+    position: relative;
+    overflow: hidden;
   }
-  .grid-container .grid-item img {
-    width: 60%;
-    height: 60%;
+  .grid-container .grid-experiencias img {
+    width: 100%;
+    height: 100%;
   }
-  .grid-container .grid-item.exp, .grid-container .grid-item.con {
-    width: 95%;
-    height: auto;
-  }
-  .grid-container .grid-item.exp h3, .grid-container .grid-item.con h3 {
-    font-size: 20px;
+  .grid-container .grid-experiencias h3 {
+    color: #151112;
+    text-shadow: 2px 1px 4px white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
     font-style: italic;
     text-transform: uppercase;
-    font-weight: 500;
-    margin: 10px 0px 0px 10px;
-    text-shadow: 1px 1px 4px white;
+    font-weight: 600;
+    top: 7%;
+    left: 50%;
   }
-  .grid-container .grid-item.exp p, .grid-container .grid-item.con p {
-    font-size: 14px;
-    padding: 0px 0px 0px 10px;
-    text-shadow: 1px 1px 4px white;
-    font-size: 12px;
+  .grid-container .grid-experiencias p {
+    color: #151112;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    text-shadow: 2px 1px 4px white;
+    position: absolute;
+    top: 18%;
+    transform: translate(0%, -40%);
+    text-align: center;
+  }
+}
+@media (min-width: 425px) and (max-width: 1020px) {
+  .grid-container {
+    display: grid;
+    position: relative;
+    padding: 5px;
+    gap: 5px;
+    grid-template-columns: 45% 45%;
+  }
+  .grid-container .grid-labodega {
+    width: 90%;
+    height: 600px;
+    grid-column: 1/2;
+    position: relative;
+    overflow: hidden;
+  }
+  .grid-container .grid-labodega img {
+    width: 100%;
+    height: 100%;
+  }
+  .grid-container .grid-labodega h3 {
+    color: #151112;
+    text-shadow: 2px 1px 4px white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 600;
+    top: 10%;
+    left: 50%;
+    text-align: center;
+  }
+  .grid-container .grid-labodega p {
+    color: #151112;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    text-shadow: 2px 1px 4px white;
+    position: absolute;
+    top: 20%;
+    transform: translate(5%, -50%);
+    text-align: center;
   }
 }
 @media (max-width: 998px) {

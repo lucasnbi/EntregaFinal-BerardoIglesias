@@ -3,7 +3,6 @@
         font-size: 16px;
     }
 }
-
 @media (max-width:858px){
     .checkbtn{
         display: flex;
@@ -38,14 +37,12 @@
         left: 0;
     }
 }
-
 @media (min-width:425px) and (max-width:800px)
 {
     .home_info {
     background-color: $blanco;
     }
 }
-
 @media (min-width: 425px) and (max-width: 800px) {
     .vinos {
       background-image: url("./img/home_vinos.jpg");
@@ -55,7 +52,6 @@
       background-attachment: fixed;
     }
 }
-
   @media (min-width:425px) and (max-width:800px)
 {
       .vinos {
@@ -66,7 +62,6 @@
       background-attachment: fixed;
       }
 }
-
   @media (min-width:425px) and (max-width:800px)
 {
     .home_nuestros_vinos {
@@ -75,43 +70,92 @@
         text-align: center;
     }
 }
-
-@media (min-width:425px) and (max-width:800px)
+@media (min-width:425px) and (max-width:920px)
 {
-   .grid-container {
+   .grid-container {    
        display: grid;
        position: relative;
        padding: 5px;
        gap: 5px;
        grid-template-columns: 45% 45%;
-       .grid-item {
-           text-align: center;
-           box-shadow: 5px 8px 12px $negro;
-           img{
-               width: 60%;
-               height: 60%
-           }
-       }
+       .grid-experiencias {
+        width: 90%;  
+        height: 600px;
+        grid-column: 2/3;
+        position: relative;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        h3{
+            color: $negro;
+            text-shadow: 2px 1px 4px $blanco;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            font-size: 1.5rem;
+            font-style: italic;
+            text-transform: uppercase;
+            font-weight: 600;
+            top: 7%;
+            left: 50%;
+        }
+        p{
+            color: $negro;
+            font-family:'Montserrat';
+            font-size: 1rem;
+            text-shadow: 2px 1px 4px $blanco;
+            position: absolute;
+            top: 18%;
+            transform: translate(0%,-40%);
+            text-align: center;
+            }
+         }
+    }
+}
 
-        .grid-item.exp, .grid-item.con {
-       width: 95%;  
-       height: auto;
-       h3{
-           font-size: 20px;
-           font-style: italic;
-           text-transform: uppercase;
-           font-weight: 500;
-           margin: 10px 0px 0px 10px;
-           text-shadow: 1px 1px 4px $blanco;
-       }
-       p{
-           font-size: 14px;
-           padding: 0px 0px 0px 10px;
-           text-shadow: 1px 1px 4px $blanco;
-           font-size: 12px;
-       }
-       }
-   } 
+@media (min-width:425px) and (max-width:1020px){
+    .grid-container {    
+        display: grid;
+        position: relative;
+        padding: 5px;
+        gap: 5px;
+        grid-template-columns: 45% 45%;
+            .grid-labodega {
+                width: 90%;  
+                height: 600px;
+                grid-column: 1/2;
+                position: relative;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                    h3{
+                    color: $negro;
+                    text-shadow: 2px 1px 4px $blanco;
+                    position: absolute;
+                    transform: translate(-50%,-50%);
+                    font-size: 1.5rem;
+                    font-style: italic;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    top: 10%;
+                    left: 50%;
+                    text-align: center;
+                }
+                p{
+                    color: $negro;
+                    font-family:'Montserrat';
+                    font-size: 1rem;
+                    text-shadow: 2px 1px 4px $blanco;
+                    position: absolute;
+                    top: 20%;
+                    transform: translate(5%,-50%);
+                    text-align: center;
+                    }
+                }
+        }   
 }
 
 @media (max-width: 998px) {
