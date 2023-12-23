@@ -1,0 +1,77 @@
+.portfoliov{
+    display: flex;
+    background-color:#f3f2ee;
+    padding: 70px 100px;
+    flex-direction: row;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    .hover01 img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .1s ease-in-out;
+        transition: .1s ease-in-out;
+        &:hover{
+            -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        }
+    }
+    img{
+        background-color: #f3f2ee;
+        margin: 5px;
+        padding: 10px 90px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        max-height: 400px;
+    }
+h2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    color: #212529;
+    }
+h3{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: #e78c3b;
+    }
+h4{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: #212529;
+    }
+a{
+    font-family: 'Montserrat', sans-serif;
+    justify-items: center;
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: none;
+    color:black;
+    &:hover{
+        font-family: 'Montserrat', sans-serif;
+        justify-items: center;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 600;
+        text-decoration: underline;
+        color: $naranja;
+        }
+    }  
+}
+
+.agotado{
+    h4{
+        font-size: 24px;
+        border: 2px solid $naranja;
+        background-color: $naranja;
+        color: $blanco;
+    }
+}
+.agotado2{
+    text-decoration: line-through;
+}
