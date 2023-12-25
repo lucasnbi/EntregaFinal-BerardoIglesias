@@ -101,76 +101,103 @@
   position: relative;
   padding: 10px 3% 0px 3%;
   width: 100%;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  justify-items: center;
-  font-family: "Montserrat", sans-serif;
+  height: 70vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1%;
 }
 .grid-container .grid-labodega {
-  width: 90%;
-  height: 600px;
-  grid-column: 1/2;
-  position: relative;
   overflow: hidden;
+  position: relative;
+  display: inline-block;
+  text-align: center;
 }
 .grid-container .grid-labodega img {
   width: 100%;
   height: 100%;
 }
 .grid-container .grid-labodega h3 {
-  color: #151112;
-  text-shadow: 2px 1px 4px white;
-  position: absolute;
+  top: 50%;
+  left: 47%;
   transform: translate(-50%, -50%);
-  font-size: 2.2rem;
+  overflow: hidden;
+  color: white;
+  text-shadow: 3px 1px 2px #151112;
+  position: absolute;
+  font-size: 1.8rem;
   font-style: italic;
   text-transform: uppercase;
   font-weight: 600;
-  top: 7%;
-  left: 50%;
-}
-.grid-container .grid-labodega p {
-  color: #151112;
-  font-family: "Montserrat";
-  font-size: 1rem;
-  text-shadow: 2px 1px 4px white;
-  position: absolute;
-  top: 20%;
-  transform: translate(65%, -90%);
   text-align: center;
+  text-decoration: none;
+  /* transition: all .5s;
+  &:hover{
+      font-size: 2rem;
+      cursor: pointer;
+      text-decoration: underline;
+      text-shadow: 4px 3px 9px $blanco; */
 }
 .grid-container .grid-experiencias {
-  width: 90%;
-  height: 600px;
-  grid-column: 2/3;
-  position: relative;
   overflow: hidden;
+  position: relative;
+  display: inline-block;
+  text-align: center;
 }
 .grid-container .grid-experiencias img {
   width: 100%;
   height: 100%;
 }
 .grid-container .grid-experiencias h3 {
-  color: #151112;
-  text-shadow: 2px 1px 4px white;
-  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2.2rem;
+  overflow: hidden;
+  color: white;
+  text-shadow: 3px 1px 2px #151112;
+  position: absolute;
+  font-size: 1.8rem;
   font-style: italic;
   text-transform: uppercase;
   font-weight: 600;
-  top: 7%;
-  left: 50%;
-}
-.grid-container .grid-experiencias p {
-  color: #151112;
-  font-family: "Montserrat";
-  font-size: 1rem;
-  text-shadow: 2px 1px 4px white;
-  position: absolute;
-  top: 20%;
-  transform: translate(0%, -80%);
   text-align: center;
+  text-decoration: none;
+  /* transition: all .5s;
+  &:hover{
+      font-size: 2rem;
+      cursor: pointer;
+      text-decoration: underline;
+      text-shadow: 4px 3px 9px $blanco;
+  }  */
+}
+.grid-container .grid-ubicacion {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.grid-container .grid-ubicacion img {
+  width: 100%;
+  height: 100%;
+}
+.grid-container .grid-ubicacion h3 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  color: white;
+  text-shadow: 3px 1px 2px #151112;
+  position: absolute;
+  font-size: 1.8rem;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  /*  transition: all .5s;
+   &:hover{
+       font-size: 2rem;
+       cursor: pointer;
+       text-decoration: underline;
+       text-shadow: 4px 3px 9px $blanco; */
 }
 
 .grid-container.hover01 .grid-experiencias img {
@@ -185,6 +212,13 @@
   transition: 0.1s ease-in-out;
 }
 .grid-container.hover01 .grid-labodega img:hover {
+  transform: scale(1.2);
+}
+.grid-container.hover01 .grid-ubicacion img {
+  transform: scale(1);
+  transition: 0.1s ease-in-out;
+}
+.grid-container.hover01 .grid-ubicacion img:hover {
   transform: scale(1.2);
 }
 
@@ -439,7 +473,7 @@ p {
 }
 
 .terroir {
-  background-image: url("../img/Terroir.jpg");
+  background-image: url("../img/labodega_terroir.jpg");
   background-position: inherit;
   background-size: cover;
   background-repeat: no-repeat;
@@ -630,91 +664,93 @@ p {
     text-align: center;
   }
 }
-@media (min-width: 425px) and (max-width: 920px) {
-  .grid-container {
-    display: grid;
-    position: relative;
-    padding: 5px;
-    gap: 5px;
-    grid-template-columns: 45% 45%;
-  }
-  .grid-container .grid-experiencias {
-    width: 90%;
-    height: 600px;
-    grid-column: 2/3;
-    position: relative;
-    overflow: hidden;
-  }
-  .grid-container .grid-experiencias img {
-    width: 100%;
-    height: 100%;
-  }
-  .grid-container .grid-experiencias h3 {
-    color: #151112;
-    text-shadow: 2px 1px 4px white;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    font-size: 1.5rem;
-    font-style: italic;
-    text-transform: uppercase;
-    font-weight: 600;
-    top: 7%;
-    left: 50%;
-  }
-  .grid-container .grid-experiencias p {
-    color: #151112;
-    font-family: "Montserrat";
-    font-size: 1rem;
-    text-shadow: 2px 1px 4px white;
-    position: absolute;
-    top: 18%;
-    transform: translate(0%, -40%);
-    text-align: center;
-  }
+/* @media (min-width:425px) and (max-width:920px)
+{
+   .grid-container {    
+       display: grid;
+       position: relative;
+       padding: 5px;
+       gap: 5px;
+       grid-template-columns: 45% 45%;
+       .grid-experiencias {
+        width: 90%;  
+        height: 600px;
+        grid-column: 2/3;
+        position: relative;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        h3{
+            color: $negro;
+            text-shadow: 2px 1px 4px $blanco;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            font-size: 1.5rem;
+            font-style: italic;
+            text-transform: uppercase;
+            font-weight: 600;
+            top: 7%;
+            left: 50%;
+        }
+        p{
+            color: $negro;
+            font-family:'Montserrat';
+            font-size: 1rem;
+            text-shadow: 2px 1px 4px $blanco;
+            position: absolute;
+            top: 18%;
+            transform: translate(0%,-40%);
+            text-align: center;
+            }
+         }
+    }
 }
-@media (min-width: 425px) and (max-width: 1020px) {
-  .grid-container {
-    display: grid;
-    position: relative;
-    padding: 5px;
-    gap: 5px;
-    grid-template-columns: 45% 45%;
-  }
-  .grid-container .grid-labodega {
-    width: 90%;
-    height: 600px;
-    grid-column: 1/2;
-    position: relative;
-    overflow: hidden;
-  }
-  .grid-container .grid-labodega img {
-    width: 100%;
-    height: 100%;
-  }
-  .grid-container .grid-labodega h3 {
-    color: #151112;
-    text-shadow: 2px 1px 4px white;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    font-size: 1.5rem;
-    font-style: italic;
-    text-transform: uppercase;
-    font-weight: 600;
-    top: 10%;
-    left: 50%;
-    text-align: center;
-  }
-  .grid-container .grid-labodega p {
-    color: #151112;
-    font-family: "Montserrat";
-    font-size: 1rem;
-    text-shadow: 2px 1px 4px white;
-    position: absolute;
-    top: 20%;
-    transform: translate(5%, -50%);
-    text-align: center;
-  }
-}
+
+@media (min-width:425px) and (max-width:1020px){
+    .grid-container {    
+        display: grid;
+        position: relative;
+        padding: 5px;
+        gap: 5px;
+        grid-template-columns: 45% 45%;
+            .grid-labodega {
+                width: 90%;  
+                height: 600px;
+                grid-column: 1/2;
+                position: relative;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                    h3{
+                    color: $negro;
+                    text-shadow: 2px 1px 4px $blanco;
+                    position: absolute;
+                    transform: translate(-50%,-50%);
+                    font-size: 1.5rem;
+                    font-style: italic;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    top: 10%;
+                    left: 50%;
+                    text-align: center;
+                }
+                p{
+                    color: $negro;
+                    font-family:'Montserrat';
+                    font-size: 1rem;
+                    text-shadow: 2px 1px 4px $blanco;
+                    position: absolute;
+                    top: 20%;
+                    transform: translate(5%,-50%);
+                    text-align: center;
+                    }
+                }
+        }   
+} */
 @media (max-width: 998px) {
   .container_servicios .servicios.restoinfo {
     font-family: "Montserrat", sans-serif;
@@ -744,6 +780,22 @@ p {
   .container_servicios .servicios.contacto_exp a:hover {
     background-color: #151112;
     color: white;
+  }
+}
+@media (min-width: 425px) and (max-width: 800px) {
+  .grid-container {
+    display: grid;
+    position: relative;
+    padding: 10px 3% 0px 3%;
+    width: 100%;
+    height: 70vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1%;
+  }
+  .grid-container .grid-ubicacion img, .grid-container .grid-labodega img, .grid-container .grid-experiencias img {
+    width: auto;
+    height: auto;
   }
 }
 .portfoliov {

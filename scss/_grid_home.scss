@@ -3,79 +3,104 @@
     position: relative;
     padding: 10px 3% 0px 3%;
     width: 100%;
-    grid-template-columns:  1fr 1fr;
-    justify-content: center;
-    justify-items: center;
-    font-family: "Montserrat", sans-serif;
-    .grid-labodega {
-    width: 90%;  
-    height: 600px;
-    grid-column: 1/2;
-    position: relative;
-    overflow: hidden; 
-    img{
-        width: 100%;
-        height: 100%;
-    }
-    h3{
-        color: $negro;
-        text-shadow: 2px 1px 4px $blanco;
-        position: absolute;
-        transform: translate(-50%,-50%);
-        font-size: 2.2rem;
-        font-style: italic;
-        text-transform: uppercase;
-        font-weight: 600;
-        top: 7%;
-        left: 50%;
-    }
-    p{
-        color: $negro;
-        font-family:'Montserrat';
-        font-size: 1rem;
-        text-shadow: 2px 1px 4px $blanco;
-        position: absolute;
-        top: 20%;
-        transform: translate(65%,-90%);
+    height: 70vh;
+    grid-template-columns:  1fr 1fr 1fr;
+    gap: 1%;
+    .grid-labodega{
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
         text-align: center;
-    }
-    }
-
-.grid-experiencias {
-    width: 90%;  
-    height: 600px;
-    grid-column: 2/3;
-    position: relative;
-    overflow: hidden; 
-    img{
-        width: 100%;
-        height: 100%;
-    }
-    h3{
-        color: $negro;
-        text-shadow: 2px 1px 4px $blanco;
-        position: absolute;
-        transform: translate(-50%,-50%);
-        font-size: 2.2rem;
-        font-style: italic;
-        text-transform: uppercase;
-        font-weight: 600;
-        top: 7%;
-        left: 50%;
-    }
-    p{
-        color: $negro;
-        font-family:'Montserrat';
-        font-size: 1rem;
-        text-shadow: 2px 1px 4px $blanco;
-        position: absolute;
-        top: 20%;
-        transform: translate(0%,-80%);
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        h3{
+            top: 50%;
+            left: 47%;
+            transform: translate(-50%,-50%);
+            overflow: hidden;
+            color: $blanco;
+            text-shadow: 3px 1px 2px $negro;
+            position: absolute;
+            font-size: 1.8rem;
+            font-style: italic;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: center;
+                text-decoration: none;
+                /* transition: all .5s;
+                &:hover{
+                    font-size: 2rem;
+                    cursor: pointer;
+                    text-decoration: underline;
+                    text-shadow: 4px 3px 9px $blanco; */
+                } 
+        }
+    .grid-experiencias{
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
         text-align: center;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        h3{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            overflow: hidden;
+            color: $blanco;
+            text-shadow: 3px 1px 2px $negro;
+            position: absolute;
+            font-size: 1.8rem;
+            font-style: italic;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+                /* transition: all .5s;
+                &:hover{
+                    font-size: 2rem;
+                    cursor: pointer;
+                    text-decoration: underline;
+                    text-shadow: 4px 3px 9px $blanco;
+                }  */
+        }
+        }
+    .grid-ubicacion{
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        h3{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            overflow: hidden;
+            color: $blanco;
+            text-shadow: 3px 1px 2px $negro;
+            position: absolute;
+            font-size: 1.8rem;
+            font-style: italic;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+               /*  transition: all .5s;
+                &:hover{
+                    font-size: 2rem;
+                    cursor: pointer;
+                    text-decoration: underline;
+                    text-shadow: 4px 3px 9px $blanco; */
+                } 
+        }
     }
-    }
-}
-
 
 .grid-container.hover01{
     .grid-experiencias{
@@ -96,4 +121,13 @@
             }
         }
     }
+    .grid-ubicacion{
+        img {
+        transform: scale(1);
+        transition: 0.1s ease-in-out;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
 }
