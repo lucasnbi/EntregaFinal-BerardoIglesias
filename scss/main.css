@@ -800,7 +800,7 @@ p {
 }
 .portfoliov {
   display: flex;
-  background-color: #f3f2ee;
+  background-color: white;
   padding: 70px 100px;
   flex-direction: row;
   height: 100%;
@@ -816,7 +816,7 @@ p {
   transform: scale(1.2);
 }
 .portfoliov img {
-  background-color: #f3f2ee;
+  background-color: white;
   margin: 5px;
   padding: 10px 90px;
   display: block;
