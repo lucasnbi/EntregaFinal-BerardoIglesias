@@ -11,7 +11,7 @@
 
 $nav_heihgt: 80px;
 $negro: #151112;
-$crema: #f2cfb3;
+$crema: #fdf5f1;
 $gris: #f5f4f2;
 $blanco: white;
 $bordo: #581b20;
@@ -27,6 +27,7 @@ $naranja: #f3ae73;
 @import 'vinos';
 @import 'experienciasSt';
 @import 'contactoSt';
+@import 'vinosportfolio';
 
 
 @mixin  banners-h1{
@@ -133,7 +134,7 @@ padding: 0px;}
 }
 /* VINOS */
 .bannerpic_pages_vinos{
-    @include banner_pic_pages (url(../img/vinos_banner.jpg)); 
+    @include banner_pic_pages (url(../img/vinos_banner.jpeg)); 
 }
 /* EXPERIENCIAS */
 .bannerpic_pages_experiencias{
@@ -143,3 +144,5 @@ padding: 0px;}
 .bannerpic_pages_contacto{
     @include banner_pic_pages(url(../img/contacto_banner));
 }
+
+
