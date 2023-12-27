@@ -1395,6 +1395,45 @@ textarea {
   text-shadow: 1px 1px 4px #292927;
 }
 
+.bannerpic_pages_vinos_detalle {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-image: url(../img/vinos_banner_detalle.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center center;
+  flex-direction: column;
+}
+.bannerpic_pages_vinos_detalle p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  color: #f3f2ee;
+  padding: 5px;
+  text-shadow: 1px 1px 4px #292927;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.bannerpic_pages_vinos_detalle h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  color: #f3f2ee;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 4px #292927;
+}
+
 /* EXPERIENCIAS */
 .bannerpic_pages_experiencias {
   display: flex;
